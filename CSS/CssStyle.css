@@ -294,7 +294,6 @@
     background-color: white;
 }
 
-/* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 100px;
