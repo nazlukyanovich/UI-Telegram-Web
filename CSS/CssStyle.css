@@ -94,16 +94,11 @@
     background-color: rgb(136, 171, 199)
 }
 
-.main-content {
-    display: flex;
-    height: 100vh;
-}
-
 .main-content-wrapper {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 1000px;
-    height: 100vh;
+    height: 100%;
     margin-top: 0;
     margin-left:  auto;
     margin-right: auto;
@@ -114,22 +109,21 @@
     flex-direction: column;
     border-right: 1.5px solid rgb(232, 234, 236);
     width: 300px;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 100%;
+
 }
 
-.main-content-dialogs::-webkit-scrollbar {
+.main-content-dialogs-channels-wrapper::-webkit-scrollbar {
     background-color: rgb(242, 242, 242);
     width: 1px;
 }
 
-.main-content-dialogs:hover::-webkit-scrollbar {
+.main-content-dialogs-channels-wrapper:hover::-webkit-scrollbar {
     background-color: rgb(242, 242, 242);
     width: 1px;
 }
 
-.main-content-dialogs:hover::-webkit-scrollbar-thumb {
+.main-content-dialogs-channels-wrapper:hover::-webkit-scrollbar-thumb {
     background-color: rgb(139, 165, 194);
 }
 
@@ -182,19 +176,20 @@
     padding: 1px;
     border-radius: 50px
 }
-
-.main-content-dialogs-channels {
+.main-content-dialogs-channels-wrapper {
     display: flex;
     align-items: center;
+    flex-direction: column;
     width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .my-dialogs-n-channels-list {
     list-style-type: none;
     padding-left: 0.01em;
     width: 100%;
+    height: 100vh;
 }
 
 .channel-image-list {
@@ -254,8 +249,7 @@
 }
 
 .single-channel-wrap:hover{
-    background-color: rgb(136, 171, 199);
-    color: white;
+    background-color: rgba(136, 171, 199, .2);
 }
 
 .single-channel-block {
@@ -272,13 +266,16 @@
 .main-chat-wrapper {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100%;
+    height: 100%;
 }
 
 .main-chat {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    width: 100%;
+    height: 770px;
 }
 
 .main-chat:hover::-webkit-scrollbar {
@@ -328,7 +325,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 250px;
+    width: 100%;
+    height: 100px;
     margin-top: 1em;
 }
 
