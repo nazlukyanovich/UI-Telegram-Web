@@ -325,7 +325,7 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: calc(15% - 50px);
+    height: calc(20% - 50px);
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -336,7 +336,8 @@
 }
 
 .textarea {
-    height: 60px;
+    resize: none;
+    height: 40px;
     width: 400px;
     border: 1px;
     border-bottom: 2px solid rgb(86, 130, 163);
