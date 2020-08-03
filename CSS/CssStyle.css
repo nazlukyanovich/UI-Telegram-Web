@@ -272,7 +272,7 @@
 .main-chat {
     overflow-y: scroll;
     width: 100%;
-    height: сalc(80%-50px);
+    height: сalc(80vh - 50px);
     margin: 0;
 }
 
@@ -325,7 +325,8 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: calc(20% - 50px);
+    height: calc(20vh - 50px);
+    min-height: 78px;
     margin-top: 1em;
     margin-bottom: 1em;
 }
