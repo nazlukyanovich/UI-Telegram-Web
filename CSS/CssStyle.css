@@ -112,13 +112,13 @@
 }
 
 .main-content-dialogs-channels-wrapper::-webkit-scrollbar {
-    background-color: rgb(242, 242, 242);
-    width: 1px;
+    background-color: rgb(255, 255, 255);
+    width: 2px;
 }
 
 .main-content-dialogs-channels-wrapper:hover::-webkit-scrollbar {
-    background-color: rgb(242, 242, 242);
-    width: 1px;
+    background-color: rgb(255, 255, 255);
+    width: 2px;
 }
 
 .main-content-dialogs-channels-wrapper:hover::-webkit-scrollbar-thumb {
